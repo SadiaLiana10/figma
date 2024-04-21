@@ -1,0 +1,242 @@
+:root{
+    --primary-font: "Poppins", sans-serif;
+    --heading-font: "PT Sans", sans-serif;
+    --text-color: #353535;
+    --button-color:#FFCC00;
+
+}
+body{
+    font-family: var(--primary-font);
+    color: var(--text-color);
+}
+h1,h2,h3{
+    font-family: var(--heading-font);
+}
+
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+}
+/* common css start */
+.container{
+    width:1110px;
+    margin:auto;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+img{
+    display:block;
+    max-width: 100%;
+}
+.justify-content-between{
+    justify-content: space-between; 
+}
+.align-center{
+    align-items:center;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    list-style-type: none;
+}
+/* common css end */
+
+/* nav css starts  */
+#nav{
+    padding-top: 13px;
+}
+#nav .menu ul li a{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: var(--text-color);
+    display: inline-block;
+    padding: 5px 28px;
+    position: relative;
+}
+#nav .menu ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: var(--text-color);
+    bottom: 0;
+    right:0;
+    transition: 0.4s;
+    
+}
+#nav .menu ul li a:hover::after{
+    left:0;
+    width:100%;
+}
+ #nav .menu ul li a.active::after{
+    left:0;
+    width:100%
+} 
+/* nav css end  */
+#hero{
+    padding:119px 0;
+    color:var(--text-color);
+}
+#hero .inner_container{
+    width:538px;
+}
+
+#hero .inner_container h4{
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom:15px;
+}
+#hero .inner_container h2{
+    margin-bottom:25px;
+font-weight: 700;
+font-size: 64px;
+
+}
+
+#hero .inner_container p{
+    font-size: 20px;
+    line-height: 190%;
+    margin-bottom:77px;
+}
+#hero .inner_container .contact a{
+    margin-bottom:66px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 209px;
+    height: 69px;
+    display: block;
+    font-size: 20px;
+    line-height: 180%;
+    transition:0.5s;
+    color: #353535;
+    margin-right: 20px;
+}
+#hero .inner_container .contact a:hover{
+    color: #fff;
+    background-color: var(--button-color);
+}
+#hero .inner_container .text{
+   margin-right:32px;
+}
+
+#hero .inner_container .text  a{
+font-weight: 600;  
+padding:18px 45px;
+} 
+
+#hero .inner_container .download a{
+    padding: 16px 18px;
+    font-weight: 500;
+    margin-right:13px;
+}
+#hero .follow{
+    display: inline-block;
+    
+}
+#hero .follow ul li  i {
+    color: var(--text-color);
+    border-radius: 50%;
+    background-color: #f4f3f3; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-right:16px ;
+ width: 40px;
+ height: 40px; 
+ transition: 0.5s;
+}
+#hero .follow ul li  i:hover{
+    background-color: var(--text-color);
+    color: #fff;
+}
+#hero .follow ul  li h4{
+
+
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 180%;
+    margin-right: 45px;
+}
+#hero .mouse{
+    transform: translateX(100%);
+}
+#hero  .about_img{
+    width:50%;
+    transform: translateX(100px); 
+}
+/* about me css start */
+#about .about_img{
+    width:50%;
+}
+#about .about_info{
+    width:50%;
+}
+#about{
+    background: linear-gradient(130deg, #fc0 0%, #faffcb 100%, #faffcb 100%);
+   padding-top:78px;
+
+}
+#about .about_info h3{
+ 
+font-weight: 700;
+font-size: 50px;
+margin-bottom: 26px;
+
+}
+#about .about_info p{
+  
+font-weight: 400;
+font-size: 20px;
+line-height: 190%;
+margin-bottom: 45px;
+
+}
+#about .about_info a{ 
+font-weight: 500;
+font-size: 18px;
+line-height: 180%;
+border: 1px solid #000;
+border-radius: 20px;
+width: 171px;
+height: 66px;
+padding:17px 43px;
+color: var(--text-color);
+transition: 0.5s;
+
+}
+#about .about_info a:hover{
+    color:#fff;
+    background-color: var(--button-color);
+}
+
+#about .about_info .ellipse {  
+    transform: translate(100%,30%);
+
+}
+/* about me css end */
+
+
